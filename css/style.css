@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Bold.eot');
+    src: url('../fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/NotoSans-Bold.woff2') format('woff2'), url('../fonts/NotoSans-Bold.woff') format('woff'), url('../fonts/NotoSans-Bold.ttf') format('truetype'), url('../fonts/NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans.eot');
+    src: url('../fonts/NotoSans.eot?#iefix') format('embedded-opentype'), url('../fonts/NotoSans.woff2') format('woff2'), url('../fonts/NotoSans.woff') format('woff'), url('../fonts/NotoSans.ttf') format('truetype'), url('../fonts/NotoSans.svg#NotoSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Noto Sans', sans-serif;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background-color: #438BFF;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-link {
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #438BFF;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.download {
+    width: 40%;
+    padding: 5px 10px;
+    background-color: #438BFF;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+    transition: all .3s;
+    text-align: center;
+}
+
+.main-title {
+    margin-top: 10px;
+}
+
+.header-link:hover {
+    background-color: #f39c12;
+}
+
+.route {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.route-location {
+    background-color: #438BFF;
+    flex-basis: 49%;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.route-location:hover {
+    opacity: .8;
+}
+
+.route-location.active {
+    background-color: #f39c12;
+}
+
+.schedule {
+    display: none;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.schedule.active {
+    display: flex;
+    animation: fade 1s linear;
+}
+
+.schedule .schedule-nearest {
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.schedule .schedule-nearest .future {
+    margin-left: 30px;
+    color: #438BFF;
+    font-weight: bold;
+}
+
+.schedule .schedule-item {
+    margin-bottom: 10px;
+}
+
+.schedule .schedule-item .bus {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.schedule .schedule-item .time {
+    padding: 5px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.map {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 85px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #438BFF;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}

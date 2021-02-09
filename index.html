@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание автобусов</title>
+    <link rel="icon" type="image/png" href="images/bus-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <h3 class="header-title">Расписание автобусов</h3>
+                    <a download="db/Расписание автобусов.docx" class="header-link" href="#">Скачать расписание</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="main-content">
+                    <a download="db/Расписание автобусов.docx" href="#" class="download">Скачать расписание</a>
+                    <h2 class="main-title">Расписание автобусов Минск - Жуков-Луг</h2>
+                    <p>Выберите точку отправления:</p>
+                    <div class="route">
+                        <div class="route-location active" data-tab="minsk">Минск (ст.м Уручье)</div>
+                        <div class="route-location" data-tab="zhuklug">Жуков-Луг</div>
+                    </div>
+                    <div class="schedule active fade" id="minsk">
+                        <div class="schedule-nearest"></div>
+                    </div>
+                    <div class="schedule" id="zhuklug">
+                        <div class="schedule-nearest"></div>
+                    </div>
+                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c3f7252bd82d299762034aaae2b55f3a55bd6145ef8eecafce608aff2441946&amp;source=constructor" width="749" height="300" frameborder="0"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <h3 class="footer-header">Schedule</h3>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
