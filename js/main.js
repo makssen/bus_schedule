@@ -146,4 +146,5 @@ document.addEventListener('DOMContentLoaded', () => {
     getData();
     showTab();
     dateFooter();
+    console.log('Schedule');
 });
