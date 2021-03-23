@@ -101,7 +101,7 @@ const craeteSchedule = (data) => {
 }
 
 const getData = () => {
-    fetch('bus_schedule/db/schedule.json')
+    fetch('../db/schedule.json')
         .then(response => response.json())
         .then(response => {
             craeteSchedule(response);
