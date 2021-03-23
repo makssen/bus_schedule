@@ -101,7 +101,7 @@ const craeteSchedule = (data) => {
 }
 
 const getData = () => {
-    fetch('../db/schedule.json')
+    fetch('https://makssen.github.io/bus_schedule/db/schedule.json')
         .then(response => response.json())
         .then(response => {
             craeteSchedule(response);
