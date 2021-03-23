@@ -65,7 +65,7 @@ const nearestBus = (data) => {
 
 const craeteSchedule = (data) => {
 
-    const outputCraeteSchedule = (data, block, typeBus) => {
+    const outputCraeteSchedule = (data, block) => {
 
         data.forEach(item => {
             const div = document.createElement('div');
@@ -76,7 +76,7 @@ const craeteSchedule = (data) => {
 
             div.appendChild(spanBus);
 
-            let timesStart = typeBus === 'start' ? item.start : item.end;
+            let timesStart = item.start;
 
             timesStart.forEach(time => {
 
@@ -95,8 +95,8 @@ const craeteSchedule = (data) => {
         });
     }
 
-    outputCraeteSchedule(data, scheduleStart, 'start');
-    outputCraeteSchedule(data, scheduleEnd, 'end');
+    outputCraeteSchedule(data, scheduleStart);
+    outputCraeteSchedule(data, scheduleEnd);
 
 }
 
